@@ -451,7 +451,7 @@ body {
 
 .carousel-indicators li {
   background-color: #fff;
-  /* #999; 
+  /* #999;
   background-color: rgba(70,70,70,.25); */
 }
 
@@ -487,3 +487,9 @@ h2{
   background-color: #fff;
   text-align: center;
 }
+
+#traction{
+  background-color: #F9F9F9;
+}
+
+.img-center {margin:0 auto;}
