@@ -33,7 +33,7 @@
 
 </head>
 
-<body id="page-top" onload = "loadMap()">
+<body id="page-top">
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid" style="padding-top: 25px;">
@@ -159,7 +159,7 @@
        <div class="col-md-4 col-sm-6 hero-feature col-centered">
            <div class="thumbnail" style="border-radius: 0;position: relative;">
                <img src="img/agenciesbg.png" alt="">
-			   <div style="position: absolute;bottom: 298px;">
+			   <div style="position: absolute;bottom: 343px;">
 			   <svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 					<!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
 					<desc>Created with Sketch.</desc>
@@ -195,7 +195,7 @@
        <div class="col-md-4 col-sm-6 hero-feature col-centered">
            <div class="thumbnail" style="border-radius: 0;position: relative;">
                <img src="img/suppliersbg.png" alt="">
-				   <div style="position: absolute;bottom: 298px;">
+				   <div style="position: absolute;bottom: 343px;">
 						<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
 		<desc>Created with Sketch.</desc>
@@ -228,10 +228,10 @@
        </div>
 
        <div class="col-md-4 col-sm-6 hero-feature col-centered">
-           <div class="thumbnail" style="border-radius: 0;position: relative;">
+           <div class="thumbnail" style="border-radius: 0;position: relative;height: 592px;">
                <img src="img/customers_bg.png" alt="">
 			   <div >
-				   <div style="position: absolute;bottom: 298px;">
+				   <div style="position: absolute;bottom: 341px;">
 						<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
 						<desc>Created with Sketch.</desc>
@@ -428,7 +428,7 @@
                      <!---------------------News Room Tile 1---------------------------->
                     <div class="col-md-6"  >
 					<a href=" http://www.travelbizmonitor.com/Top-Stories/iaai-to-power-itop-booking-portal-to-deliver-ndclisted-airline-products-33992">
-                        <div class="col-md-12 thumbnail newsroom-tiles" id="content" style="border-radius: 0;">
+                        <div id="newstile1" class="col-md-12 thumbnail newsroom-tiles"  style="border-radius: 0;">
 						
 							<div class="col-md-12" style="padding-left: 30px;padding-top: 30px;">
 								
@@ -525,7 +525,7 @@
                     <!---------------------News Room Tile 2---------------------------->
                     <div class="col-md-6">
 					<a href=" http://www.expressbpd.com/travel/management-travel/iconic-model/392025/">
-                         <div class="col-md-12 thumbnail newsroom-tiles" style="border-radius: 0;">
+                         <div id="newstile2" class="col-md-12 thumbnail newsroom-tiles" style="border-radius: 0;">
                              <div class="col-md-6 newsroom-tiles" style="padding-top: 140px;padding-left: 40px;">
                                 <p class="newsroom-tiles-heading">ICONic model</p>
                                 
@@ -543,7 +543,7 @@
                      <!---------------------News Room Tile 3---------------------------->
                     <div class="col-md-6" >
 					<a href="http://www.thehindubusinessline.com/specials/flight-plan/travel-agents-iata/article9912716.ece">
-                        <div class="col-md-12 thumbnail newsroom-tiles" style="border-radius: 0;">
+                        <div id="newstile3" class="col-md-12 thumbnail newsroom-tiles" style="border-radius: 0;">
 							<div class="col-md-6 "  style="padding-top: 140px;padding-left: 40px;">
 								
 									<p class="newsroom-tiles-heading"> iTop comes to the rescue of travel agents</p>
@@ -559,7 +559,7 @@
                     <!---------------------News Room Tile 4---------------------------->
                     <div class="col-md-6">
 					<a style="text-decoration:none;" href=" http://www.eglobaltravelmedia.com.au/indian-travel-agents-get-their-own-portal/">
-                         <div class="col-md-12 thumbnail newsroom-tiles" style="border-radius: 0;">
+                         <div id="newstile4" class="col-md-12 thumbnail newsroom-tiles" style="border-radius: 0;">
 							 <div class="col-md-12" style="padding-left: 30px;padding-top: 30px;">
 								
 									<p class="newsroom-tiles-heading"> Indian Travel Agents get their Own Portal</p>
@@ -578,7 +578,7 @@
                      <!---------------------News Room Tile 5---------------------------->
                     <div class="col-md-6" >
 					<a style="text-decoration:none;" href="https://timesofindia.indiatimes.com/city/kochi/travel-agents-launch-online-ticket-portal/articleshow/60724303.cms">
-                        <div class="col-md-12 thumbnail newsroom-tiles" style="border-radius: 0;">
+                        <div id="newstile5" class="col-md-12 thumbnail newsroom-tiles" style="border-radius: 0;">
 							<div class="col-md-12" style="padding-left: 30px;padding-top: 30px;">
 								
 									<p class="newsroom-tiles-heading"> Travel agents launch online ticket portal </p>
@@ -736,6 +736,9 @@
     <!-- Theme JavaScript -->
     <script src="js/creative.js"></script>
     <script>
+
+	
+	
 	<!-------------------scroll effect-------------------------->
 	$(document).ready(function(){
 		$("#mainNav").css("background-color", "transparent");

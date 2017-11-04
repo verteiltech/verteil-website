@@ -646,3 +646,44 @@ h2{
 	color: #333333;
 }
 
+#newstile1:hover { 
+	height:366px!important;
+	width:535px!important;
+	box-shadow: 10px 10px 5px #888888;
+	img{
+		height:366px!important;
+	}
+}
+#newstile2:hover { 
+	height:366px!important;
+	width:535px!important;
+	box-shadow: 10px 10px 5px #888888;
+	
+}
+
+#newstile2 img:{
+	height:359px!important;
+}
+
+#newstile3:hover { 
+	height:366px!important;
+	width:535px!important;
+	box-shadow: 10px 10px 5px #888888;
+	
+}
+
+#newstile3 img:{
+	height:359px!important;
+}
+	
+#newstile4:hover { 
+	height:366px!important;
+	width:535px!important;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+#newstile5:hover { 
+	height:366px!important;
+	width:535px!important;
+	box-shadow: 10px 10px 5px #888888;
+}
