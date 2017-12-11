@@ -6,15 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+<!--	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@verteil" />
+	<meta name="twitter:creator" content="@verteil" />
+	<meta property="og:url" content="http://www.verteil.com/" />
+	<meta property="og:title" content="NDC takes off in India : Verteil Technologies taps into British Airways’s NDC channel to give real time access to travel agents and OTAs in India" />
+	<meta property="og:description" content="" />
+<meta property="og:image" content="http://www.verteil.com/img/blog_image.jpg" /> -->
 
     <title>Verteil - Ready to take off</title>
     <link rel="icon" href="img/icon.png" type="image/png">
     <!--link rel="icon" type="image/x-icon" href="img/favicon.ico?" /-->
 
     <!-- Bootstrap Core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
     <!-- Custom Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
@@ -30,43 +38,45 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
 <body id="page-top">
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid" style="padding-top: 25px;">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" >
+        <div class="container-fluid" style="padding-top: 25px;height: 85px;">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
+            <div class="navbar-header" style="margin-top: -14px;margin-left: 53px;">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top" style="font-family: 'Roboto';">
-                  Verteil
+                <a class="navbar-brand page-scroll" href="#page-top" onclick="homeclick()">
+                  <img class="img-responsive center-block" src="img/verteil_logo.png" alt="">
                 </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#about" style="font-family: 'Roboto';">ABOUT</a>
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 50px;margin-top: -7px;">
+                    <li >
+                        <a id="aboutNavbar" class="page-scroll" href="#about" style="font-family: 'Roboto';color: #ffffff;font-size: 14px;" onclick="homeclick();">ABOUT</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#proposition" style="font-family: 'Roboto';">VALUE PROPOSITION</a>
+                    <li >
+                        <a id="propositionNavbar" class="page-scroll" href="#proposition" style="font-family: 'Roboto';color: #ffffff;font-size: 14px;" onclick="homeclick();">VALUE PROPOSITION</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#technology" style="font-family: 'Roboto';"> OUR TECHNOLOGY</a>
+                    <li >
+                        <a id="technologyNavbar" class="page-scroll" href="#technology" style="font-family: 'Roboto';color: #ffffff;font-size: 14px;" onclick="homeclick();"> OUR TECHNOLOGY</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#milestones" style="font-family: 'Roboto';">MILESTONES</a>
+                    <li >
+                        <a id="milestoneNavbar" class="page-scroll" href="#milestones" style="font-family: 'Roboto';color: #ffffff;font-size: 14px;" onclick="homeclick();">MILESTONES</a>
                     </li>
-				    <li>
-					    <a class="page-scroll" href="#newsroom" style="font-family: 'Roboto';">NEWS ROOM</a>
+				    <li >
+					   <a id="newsNavbar" href="#" style="font-family: 'Roboto';color: #ffffff;font-size: 14px;" onclick="shownews('newsroom')">NEWS ROOM</a>
+					</li>
+					<li >
+					   <a id="blogNavbar" href="#" style="font-family: 'Roboto';color: #ffffff;font-size: 14px;" onclick="shownews('blog')">BLOG</a>
 					</li>
                     <li>
-                        <a class="page-scroll" href="#contact" style="font-family: 'Roboto';">CONTACT</a>
+                        <a id="contactNavbar" class="page-scroll" href="#contact" style="font-family: 'Roboto';color: #ffffff;font-size: 14px;" onclick="homeclick();">CONTACT</a>
                     </li>
                 </ul>
             </div>
@@ -75,17 +85,16 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <header >
+    <header id="header">
         <div class="header-content">
             <div class="header-content-inner">
                 <!-- <img class="img-responsive center-block" src="img/logo.png" alt=""> -->
 				<!-- <div class="verteil-title">VERTEIL</div> -->
 				<div style="padding-right: 75px;">
->
-					<svg width="100%" height="249px" viewBox="0 0 437 249" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<!-- <svg width="100%" height="249px" viewBox="0 0 437 249" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
-						<desc>Created with Sketch.</desc>
-						<defs></defs>
+					<!--	<desc>Created with Sketch.</desc>-->
+						<!--<defs></defs>
 						<g id="Info-Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 							<g id="Verteil" transform="translate(-420.000000, -146.000000)" fill="#80A83F">
 								<g id="Banner">
@@ -102,21 +111,25 @@
                 </div>
                 <p id="homeTagLine">CONNECTING PARTNERS DIRECTLY</p>
                 <a href="#about" class="btn page-scroll btn-trans text-center" style="padding-top:9px!important;">What are we</a>
-                <a href="#contact" class="btn btn-primary btn-xl page-scroll btn-green text-center" style="padding-top: 9px!important;font-size:18px">Contact us</a>
+                <a href="#contact" class="btn btn-primary btn-xl page-scroll btn-green text-center" style="padding-top: 9px!important;font-size:18px">Contact us</a>-->
+				<div style="padding-top:120px">
+				<img id="banner1" src="./img/banner_text_1.png" style="padding-bottom:40px!important;padding-left:60px;"><br/><br/>
+				<img id="banner2" src="./img/banner_text_2.png" style="padding-bottom:40px!important;"><br/><br/>
+				<img id="banner3" src="./img/banner_text_3.png" style="padding-bottom:40px!important;"><br/><br/>
+				</div>
             </div>
         </div>
     </header>
-
     <section class="" id="about">
       <div class="container">
         <div class="row">
           <div class="col-lg-7 col-md-7 col-sm-7">
-            <h2 class="section-heading proposition-header">VERTEIL TECHNOLOGIES</h2>
+            <h2 class="section-heading proposition-header" style="font-size: 40px;">Verteil Technologies</h2>
             <p></p>
-            <p class="abouttext proposition-content" style="line-height: 34px;">Our vision is to build a customer centric new-generation distribution platform which will enable travel suppliers to innovate and sell new products and services, allowing consumers to access these with the least effort and cost. Our direct connect platform will provide customers a fully transparent travel experience by allowing them to take informed decisions comparing product offers from different suppliers against a wide range of attributes.</p>
-            <p class="abouttext proposition-content" style="line-height: 34px;">We believe that the travel distribution world is on the verge of a major transformation. We at Verteil plan to play a big part in this.</p>
+            <p class="abouttext technologies-content" style="line-height: 34px;">Our vision is to build a customer centric new-generation distribution platform which will enable travel suppliers to innovate and sell new products and services, allowing consumers to access these with the least effort and cost. Our direct connect platform will provide customers a fully transparent travel experience by allowing them to take informed decisions comparing product offers from different suppliers against a wide range of attributes.</p>
+            <p class="abouttext technologies-content" style="line-height: 34px;">We believe that the travel distribution world is on the verge of a major transformation. We at Verteil plan to play a big part in this.</p><br/>
 
-            <img class="img-responsive" src="img/team_verteil.svg" alt="">
+            <img class="img-responsive" src="img/team_verteil.svg" alt=""><br/><br/>
           </div>
           <div class="col-lg-4 col-lg-offset-1 col-md-5 col-sm-5">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -150,16 +163,16 @@
       <!-- /.container -->
     </section>
 
-   <section id="proposition" id="valueproposition">
+   <section id="proposition">
      <div class="row text-center row-centered">
        <div class="col-lg-12 col-md-12 col-sm-12">
-         <h2 class="section-heading proposition-header">VALUE PROPOSITION</h2>
+         <h2 class="section-heading proposition-header" style="font-size: 40px;">Value Proposition</h2>
        </div>
      </div>
 	 <div class="container">
      <div class="row text-center align-bottom">
        <div class="col-md-4 col-sm-6 hero-feature col-centered">
-           <div class="thumbnail" style="border-radius: 0;position: relative;">
+           <div class="thumbnail" style="border-radius: 0;position: relative; padding: 0px!important;">
                <img src="img/agenciesbg.png" alt="">
 			   <div style="/*position: absolute;bottom: 343px;*/margin-top:-100px;">
 			   <svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -195,7 +208,7 @@
        </div>
 
        <div class="col-md-4 col-sm-6 hero-feature col-centered">
-           <div class="thumbnail" style="border-radius: 0;position: relative;">
+           <div class="thumbnail" style="border-radius: 0;position: relative; padding: 0px!important;">
                <img src="img/suppliersbg.png" alt="">
 				   <div style="/*position: absolute;bottom: 343px;*/margin-top:-100px;">
 						<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -224,15 +237,14 @@
                       <li>Take control of your customer journey with relevant, context specific offers</li>
                       <li>Sell complete portfolio of products</li>
                       <li>Intelligent caching mechanisms ensures minimal load on supplier infrastructure.</li>
+					</ul>
                    </p>
                </div>
            </div>
        </div>
-
-       <div class="col-md-4 col-sm-6 hero-feature col-centered">
-           <div id="customerproposition" class="thumbnail" style="border-radius: 0;position: relative;">
+ <div class="col-md-4 col-sm-6 hero-feature col-centered">
+           <div id="customerproposition" class="thumbnail" style="border-radius: 0;position: relative; padding: 1px!important;">
                <img src="img/customers_bg.png" alt="">
-			   <div >
 				   <div style="/*position: absolute;bottom: 343px;*/margin-top:-100px;">
 						<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
@@ -251,18 +263,17 @@
 							</g>
 						</g>
 					</svg>
-					</div>
-				</div>
-               <div class="caption">
+				   </div>
+			   <div class="caption">
                    <h3>CUSTOMERS</h3>
                    <p>
-                     <ul class="proposition-content">
+                    <ul class="proposition-content" style="margin-bottom:40px;">
                        <li>One stop shop for travel related products</li>
                        <li>Ability to choose a travel experience instead of just buying products</li>
                        <li>Ability to shop and compare the value of these  propositions across airlines</li>
                        <li>Understanding true value of airline products</li>
-                     </ul>
-                  </p>
+					</ul>
+                   </p>
                </div>
            </div>
        </div>
@@ -273,13 +284,13 @@
        <div class="container">
            <div class="row">
                <div class="col-lg-12 ">
-                   <h2 class="section-heading pull-left technology-section-heading" style="padding-left: 41px;">OUR TECHNOLOGY</h2>
+                   <h2 class="section-heading pull-left technology-section-heading" style="padding-left: 41px;font-size: 40px;">Our Technology</h2>
                </div>
            </div>
        </div>
        <div class="container" style="padding-left: 5px;">
            <div class="row row-centered">
-             
+
                <div class="col-lg-4 col-md-4 text-center col-centered">
 			    <div class="thumbnail" style="border-radius: 0;">
                    <div class="service-box-our-tech">
@@ -289,14 +300,14 @@
                      </div>
 					 <div class="col-lg-12" style="margin-top: -15px;">
                        <h3 class="technology-section-sub-heading">CLOUD AWARE ARCHITECTURE</h3>
-                       <p class="text-muted technology-section-content">Built using granular microservices and flexible design supporting hybrid cloud model with 100% elastic scaling.</p>
+                       <p class="text-muted technology-section-content" style="padding-left: 11px;margin-right: 5px;">Built using granular microservices and flexible design supporting hybrid cloud model with 100% elastic scaling.</p>
                    </div>
                    </div>
                </div>
 			   </div>
-			   
+
                <div class="col-lg-4 col-md-4 text-center col-centered">
-			   <div class="thumbnail" style="border-radius: 0;height: 302px!important;">
+			   <div id="ogcl" class="thumbnail" style="border-radius: 0;">
                    <div class="service-box-our-tech">
                      <div class="col-lg-12">
                        <img class="sr-icons" src="img/technology_icon_2.svg"></img>
@@ -309,7 +320,7 @@
                    </div>
                </div>
                </div>
-			              
+
                <div class="col-lg-4 col-md-4 text-center col-centered">
 			    <div class="thumbnail" style="border-radius: 0;">
 					<div class="service-box-our-tech">
@@ -332,7 +343,7 @@
        <div class="container">
            <div class="row" >
                <div class="col-lg-12" >
-                   <h2 class="section-heading milestone-tiles-header" style="margin-left: 55px;">MILESTONES</h2>
+                   <h2 class="section-heading milestone-tiles-header" style="margin-left: 55px;font-size: 40px;">Milestones</h2>
                </div>
            </div>
        </div></br></br>
@@ -340,52 +351,52 @@
            <div class="row" style="margin-left: 0px;">
 				<div class="col-md-12">
 				   <div class="col-xs-12 col-sm-6 col-lg-8 pull-left" style="padding-left:50px;">
-					   <h3 class="milestone-tiles-heading" >FUNDING</h3>
-					   <p class="text-muted">We are thrilled to be among the few startups to have the support and backing from KSIDC, Govt of Kerala with their approval of our funding application after a very stringent vetting process. This funding will go a long way in helping us achieve our goals.</p>
-					   <a href="http://www.ksidc.org/seed-company-profiles.php">More Details</a>
+					   <h3 class="milestone-tiles-heading" >Funding</h3><br/>
+					   <p class="text-muted" style="font-family:'Roboto';font-weight:400;font-size:17px;">We are thrilled to be among the few startups to have the support and backing from KSIDC, Govt of Kerala with their approval of our funding application after a very stringent vetting process. This funding will go a long way in helping us achieve our goals.</p>
+					   <a href="http://www.ksidc.org/seed-company-profiles.php" style="font-family:'Roboto';font-weight:400;">More Details</a>
 				   </div>
 				   <div class="col-xs-1 col-lg-4 pull-right" style="width:33%;padding-top:53px;">
 					 <img class="img-responsive" src="img/KSIDCstartup.png" alt="" style="height: 97px;width: 374px;margin-left: 12%;" >
 				   </div>
 			   </div>
            </div>
-       </div> 
-        <div class="container"> 
+       </div> <br/><br/>
+        <div class="container">
             <div class="row" style="margin-left: 0px;">
 			<div class="col-md-12">
                <div class="col-xs-12 col-sm-6 col-lg-8 pull-left" style="padding-left:37px;">
-                   <h3 class="milestone-tiles-heading">RECOGNISED BY</h3>
-                   <p class="text-muted">We are delighted to announce that our startup has been recognised by the Department of Industrial Policy and Promotion (DIPP), Govt of India based on the merits of our innovative product among other criteria. DIPP manages the ‘Startup India’ initiative whereby they recognise startups who are using technology to bring about innovative solutions to market.</p>
+                   <h3 class="milestone-tiles-heading">RECOGNISED BY</h3><br/>
+                   <p class="text-muted" style="font-family:'Roboto';font-weight:400;font-size:17px;">We are delighted to announce that our startup has been recognised by the Department of Industrial Policy and Promotion (DIPP), Govt of India based on the merits of our innovative product among other criteria. DIPP manages the ‘Startup India’ initiative whereby they recognise startups who are using technology to bring about innovative solutions to market.</p>
                </div>
                <div class="col-xs-1 col-lg-4">
                  <img align="middle" class="img-responsive text-center" src="img/startupIndia.png" alt="" style="margin-top: 51px;margin-left:19%;width: 260px;">
                </div>
             </div>
             </div>
-          </div> 
-           <div class="container"> 
+          </div> <br/><br/>
+           <div class="container">
            <div class="row" style="margin-left: 0px;">
 		   <div class="col-md-12">
                <div class="col-md-10 col-xs-12 col-sm-6 col-lg-8 pull-left" style="padding-left:37px;">
-                   <h3 class="milestone-tiles-heading">CERTIFICATION</h3>
-                   <p class="text-muted">Verteil Technologies is a "NDC Capable" Level 3 certified IT provider as per the IATA NDC certification program. Level 3 certification is the highest level NDC certification instituted by IATA, the body that represents and serves the airline industry.</p>
-				   <a href="http://www.iata.org/whatwedo/airline-distribution/ndc/Pages/company.aspx?c=88" >More Details</a>
-                   
+                   <h3 class="milestone-tiles-heading">CERTIFICATION</h3><br/>
+                   <p class="text-muted" style="font-family:'Roboto';font-weight:400;font-size:17px;">Verteil Technologies is a "NDC Capable" Level 3 certified IT provider as per the IATA NDC certification program. Level 3 certification is the highest level NDC certification instituted by IATA, the body that represents and serves the airline industry.</p>
+				   <a href="http://www.iata.org/whatwedo/airline-distribution/ndc/Pages/company.aspx?c=88" style="font-family:'Roboto';font-weight:400;">More Details</a>
+
                </div>
                <div class="col-md-10 col-xs-1 col-lg-4 pull-right" style="width:33%;">
                  <img align="middle" class="text-center" src="img/NDC_capable-3.png" alt="NDC Cert logo"
-                  style="height: 180px;width: 170px;margin-top: 8px;margin-left:34%;">
+                  style="height: 180px;width: 170px;margin-left:34%;">
                </div>
                </div>
            </div>
-          </div> 
+          </div> <br/><br/>
         <div class="container">
            <div class="row" style="margin-left: 0px;">
 		   <div class="col-md-12">
                <div class="col-xs-10 col-sm-6 col-lg-8" style="padding-left:37px;">
-                   <h3 class="milestone-tiles-heading">IATA Travel Agency Partnership</h3>
-                   <p class="text-muted text-left">Iata Agents Association of India (IAAI) one of the largest IATA agency consurtiums in India signs an exclusive partnership with Verteil Technologies to be their NDC direct connect technology partner. Verteil Technologies NDC direct connect platform “Verteil Direct Connect” will be integrated with IAAI’s ITop booking portal to deliver new innovations to the travelling public.</p>
-				   <a href=" http://www.travelbizmonitor.com/Top-Stories/iaai-to-power-itop-booking-portal-to-deliver-ndclisted-airline-products-33992">More Details</a>
+                   <h3 class="milestone-tiles-heading">IATA Travel Agency Partnership</h3><br/>
+                   <p class="text-muted text-left" style="font-family:'Roboto';font-weight:400;font-size:17px;">Iata Agents Association of India (IAAI) one of the largest IATA agency consurtiums in India signs an exclusive partnership with Verteil Technologies to be their NDC direct connect technology partner. Verteil Technologies NDC direct connect platform “Verteil Direct Connect” will be integrated with IAAI’s ITop booking portal to deliver new innovations to the travelling public.</p>
+				   <a href=" http://www.travelbizmonitor.com/Top-Stories/iaai-to-power-itop-booking-portal-to-deliver-ndclisted-airline-products-33992" style="font-family:'Roboto';font-weight:400;text-decoration:none;">More Details</a>
                </div>
                <div class="col-xs-1 col-lg-2">
                  <img align="middle" class="img-responsive" src="img/iaai_logo.png" alt=""
@@ -397,14 +408,14 @@
                </div>
                </div>
            </div>
-         </div> 
+         </div> <br/><br/>
 		 <div class="container">
            <div class="row" style="margin-left: 0px;">
 		   <div class="col-md-12">
                <div class="col-xs-12 col-sm-6 col-lg-8" style="padding-left:37px;">
-                   <h3 class="milestone-tiles-heading">Authorized IT service provider of British Airways</h3>
-                   <p class="text-muted text-left">Verteil Technologies NDC direct platform, Verteil Direct Connect (VDC) has been successfully integrated with British Airways NDC platform, which makes Verteil Technologies now an authorized IT provider for British Airways worldwide. This integration now allows IAAI agents to differentiate themselves by their ability to access full and rich content from British Airways among many other benefits.</p>
-				   <a href=" https://www.britishairways.com/assets/pdfs/ndc/verteil-ndc.pdf">More Details</a>
+                   <h3 class="milestone-tiles-heading">Authorized NDC service provider of British Airways</h3><br/>
+                   <p class="text-muted text-left" style="font-family:'Roboto';font-weight:400;font-size:17px;">Verteil Technologies NDC direct platform, Verteil Direct Connect (VDC) has been successfully integrated with British Airways NDC platform, which makes Verteil Technologies now an authorized IT provider for British Airways worldwide. This integration now allows IAAI agents to differentiate themselves by their ability to access full and rich content from British Airways among many other benefits.</p>
+				   <a href=" https://www.britishairways.com/assets/pdfs/ndc/verteil-ndc.pdf" style="font-family:'Roboto';font-weight:400;text-decoration:none;">More Details</a>
                </div>
                <div class="col-xs-1 col-lg-4">
                  <img align="middle" src="img/ba_logo.png" alt="" style="height: 56px;width: 350px;margin-top: 17%;margin-left: 15%;">
@@ -414,191 +425,263 @@
          </div>
        </div>
    </section>
-   
+    <section id="blog" class="well" style="padding:0px 0px 0px 0px;border-radius: 0px;">
+	<!--style="height: 440px;width: 100%;background-color: #f7f7f7;"-->
+       <div class="container" >
+           <div class="row">
+               <div class="col-lg-12">
+					<div id="blogcontent" class="col-md-12" style="border-radius: 0;margin-top: -60px;padding:0px;">
+						<div class="col-md-12" style="padding-left: 60px;padding-top: 60px;padding-right: 70px;">
+							<div class="col-md-12">
+								<p class="blog-tile-heading"> NDC takes off in India: Verteil Technologies taps into British Airways’s NDC channel for direct connect bookings
+  </p>
+								<p style="font-family: 'Roboto';font-size: 18px;font-weight: 500;color: #000000;"> Press Release </p>
+								<p style="font-family: 'Roboto';font-weight: 400;font-size: 16px;color: #666666;"> Dec 11, 2017 </p>
+
+								<!--<div class="col-md-12" style="padding-left: 0;"> 
+                  <a style="text-decoration:none" href="https://www.linkedin.com/cws/share?url=http%3A%2F%2Fverteil.com" target="_blank">
+										<img src="./img/linkedin.png"/>&nbsp;
+									</a>
+									<a style="text-decoration:none" href="https://www.facebook.com/sharer/sharer.php?u=verteil.com" target="_blank">
+										<img src="./img/facebook.svg"/>&nbsp;
+									</a>
+									<a style="text-decoration:none" href="https://twitter.com/share?url=https%3A%2F%2Fverteil.com&
+								via=twitterdev&related=twitterapi%2Ctwitter&hashtags=verteil%2Cndc&text=Verteil%20Blog" target="_blank">
+										<img src="./img/twitter.svg"/>&nbsp;
+									</a>
+
+											<a style="text-decoration:none" href="https://twitter.com/share?url=https%3A%2F%2Fverteil.com&
+								via=twitterdev&related=twitterapi%2Ctwitter&hashtags=verteil%2Cndc&text=Verteil%20Blog" target="_blank">
+										<img src="./img/twitter.svg"/>&nbsp;
+									</a>-->
+								<!--	<a href="mailto:contact@verteil.com" style="text-decoration:none">
+										<img src="./img/mail.svg"/>&nbsp;
+									</a>
+
+									<img src="./img/link.svg 
+
+								</div><br/><br/>-->
+
+							<p style="text-align:justify" class="blog-tile-content" style="padding-top: 30px;">Verteil Technologies is thrilled to announce the first-ever direct connect booking using IATA’s NDC standard on British Airways in India using our direct connect platform, Verteil Direct Connect (VDC). On 08 Dec 2017, our partner agency, Magellan Travels, an IATA accredited travel agent based out of Chennai issued a Chennai – London ticket on British Airways directly connecting to the airline using the Verteil Direct Connect (VDC) technology platform and thereby becoming the first travel agency in India to take advantage of the offers coming directly from British Airways. It is claimed to be the first live IATA NDC transaction from India.</p><br/>
+
+							<img src="./img/blog_image.jpg" style=" width: 99%;"><br/><br/>
+
+							<p style="text-align:justify" class="blog-tile-content" >
+							Online and Offline Travel service providers can now revolutionize the way they do business using Verteil Technologies’ next generation cloud-based airline distribution platform, VDC. Built on IATA’s NDC (New Distribution Capability) standard, VDC platform offers the travel agents a new direct channel to access the airline’s vast range of services that will enable them to offer a lot more options to discerning travelers. Current airline distribution platforms are limited to offering seat/fare options to travelers and travel agents due to the legacy technologies that power these distribution platforms.
+							</p><br/>
+
+							<p style="text-align:justify" class="blog-tile-content" >
+							At Verteil, we are completely aligned with IATA’s vision for NDC. Our goal is to unlock the full value of NDC and make it available to the indirect airline sales channels in India and other Asia Pacific regions thereby enabling our partner agents to shop, book and fulfil offers to their customer's satisfaction. With the launch of IATA’s NDC standard, we believe, airline travel distribution has reached a tipping point that will forever change how products and services will be offered by the airlines to all its travel partners.
+							</p><br/>
+
+              <div class="row" style="padding-left:18px;">
+								<div class="col-md-1" style="padding-left:0px;">
+									<img src='./img/quote.png'>
+								</div>
+
+								<div class="col-md-10">
+									<p style="text-align:justify" class="blog-quote" style="margin-left: -45px;">Verteil Technologies is delighted to pioneer the direct connect distribution model in the Indian market, providing travel agents with unique and differentiated offers via a completely new generation technology platform.</p>
+								</div>
+							</div><br/>
+
+							<p style="text-align:justify" class="blog-tile-content" >
+                "Verteil Technologies is delighted to pioneer the direct connect distribution model in the Indian market, providing travel agents with unique and differentiated offers via a completely new generation technology platform. With the successful go-live in British Airway’s NDC channel, Verteil is all set to be standard for driving adoption of direct connect NDC based solution to the Indian market as we expand to on-board all the member agents of IATA Agents Association of India (IAAI) and beyond” said Jerrin Jos, Founder & CEO, Verteil Technologies.
+              </p><br/>
+
+              <p style="text-align:justify" class="blog-tile-content" >
+              IAAI, one of the major IATA Travel Agency consortiums having around 1400 agency members pan India, has recently signed a contract with Verteil Technologies to leverage its direct connect platform for their member agencies to connect directly with airlines. Verteil is currently in the process of on-boarding these agents to migrate a significant volume of indirect airline sales in India to its direct connect platform.
+              </p><br/>
+
+			  <div class="row" style="padding-left:18px;">
+								<div class="col-md-1" style="padding-left:0px;">
+									<img src='./img/quote.png'>
+								</div>
+
+								<div class="col-md-10">
+									<p style="text-align:justify" class="blog-quote" style="margin-left: -45px;">Verteil’s technology platform is fully integrated with our in-house enterprise booking tool iTop which allows all our member agencies to seamlessly buy any travel related products. Congratulations to our friends at Verteil on making history. </p>
+								</div>
+							</div><br/>
+
+              <p style="text-align:justify" class="blog-tile-content" >
+               “We are delighted to have our partner agency, Magellan Travels to be the very first IATA agency in India to issue a standalone ticket using the NDC direct connect technology implemented by Verteil Technologies. IAAI is fully committed to doing business in the direct connect channel with our technology partner Verteil Technologies. Verteil’s technology platform is fully integrated with our in-house enterprise booking tool iTop which allows all our member agencies to seamlessly buy any travel related products. Congratulations to our friends at Verteil on making history” said Biji Eapen, President of IAAI (IATA Agents Association of India) 
+              </p><br/>
+
+              <p style="text-align:justify" class="blog-tile-content" >
+               Airlines like British Airways, Lufthansa, Air France etc. have already launched additional fees for any bookings made through legacy indirect distribution channels which are used by most of the travel agencies today. These fees are completely waived off for tickets booked via an NDC direct connect channel like Verteil Direct Connect. With IAAI's exclusive partnership with Verteil Technologies, travelers booking BA tickets with any IAAI IATA agent pan India will not incur this additional fee.
+              </p><br/>
+
+              <div class="row" style="padding-left:18px;">
+								<div class="col-md-1" style="padding-left:0px;">
+									<img src='./img/quote.png'>
+								</div>
+
+								<div class="col-md-10">
+									<p style="text-align:justify" class="blog-quote" style="margin-left: -45px;">It is indeed a proud moment for all of us at Magellan Travels to be the first IATA Agency in India to issue a ticket on the NDC channel of BA enabled by Verteil Technologies direct connect platform, Verteil Direct Connect. </p>
+								</div>
+							</div><br/>
+
+							<p style="text-align:justify" class="blog-tile-content" >
+              “It is indeed a proud moment for all of us at Magellan Travels to be the first IATA Agency in India to issue a ticket on the NDC channel of BA enabled by Verteil Technologies direct connect platform, Verteil Direct Connect. The entire on-boarding process was quick and easy and the feedback provided was incorporated to my satisfaction. Offline Travel Agents now have a modern platform in Verteil Direct Connect that has easy to use workflows combined with visually rich content to allow the travel agent to clearly compare multiple offers from an airline which will help us serve our customers better. The best part of this new technology is that it circumvents the distribution fee imposed by different carriers around the world thus lowering the ticket prices. Congratulations to Verteil Technologies on this momentous occasion” said Faisal Sharhabeel, Director, Magellan Travels
+              </p><br/>
+
+							<p style="text-align:justify" style="font-family: 'Roboto-Italic';" class="blog-tile-content">Verteil Technologies is founded by airline techno-domain experts with close to 20 years of experience in the airline IT industry. Verteil aims to redefine the legacy airline distribution ecosystem which has been in existence for more than 40 years now. The company has already received IATA NDC Level 3 certification which is the highest level of certification given by IATA for innovations in the airline distribution space using NDC. Verteil Technologies is recognized by StartupIndia, a Govt. of India initiative for recognizing innovative start-ups. The company is backed by KSIDC (Kerala State Industrial Development Corporation), industrial wing of Govt Of Kerala, India who supports and funds start-ups with innovative products.</p><br/><br/><br/>
+					</div>
+               </div>
+           </div>
+	   </div>
+	   </div>
+	   </div><br/><br/>
+	</section>
+   <section id="founders">
+       <!--<div class="container" style="height: 440px;width: 100%;background-color: #f7f7f7;">
+           <div class="row">
+               <div class="col-lg-12 text-center">
+                   <h2 class="technology-section-heading" style="margin-top: 92px;">Meet the Founders</h2>
+               </div>
+			   <div class="col-md-6">
+			      <div id="founder1" style="text-align: -webkit-center;width: 480px;float: right;margin-top: 84px;text-align: center;">
+				     <img class="img-responsive" src="img/jerrin_photo.png" alt="" style="padding-left: 120px;">
+					 <p style="font-family: Roboto;font-weight:700;font-size: 18px;font-weight: bold;color: #333333;    padding-top: 16px;">Jerrin Jose</p>
+					 <div style="font-family: Roboto;font-weight:400;font-size: 14px;color: #333333;line-height: 1.7;">Ranjit Kurian has spent 2 decades in the software industry in various roles in Software Development, Product Management and Product Marketing roles at Microsoft Corporation, USA and IBS Software Services, India. He has primarily worked in Database Systems, Windows Operating System, MRO and Logistics Systems.</div>
+			      </div>
+			   </div>
+			   <div class="col-md-6">
+			   	  <div id="founder2" style="text-align: -webkit-center;width: 480px;float: left;margin-top: 84px;line-height: 1.7;text-align: center;">
+				     <img class="img-responsive" src="img/satheesh_photo.png" alt="" style="padding-left: 120px;">
+					 <p style="font-family: Roboto;font-weight:700;font-size: 18px;font-weight: bold;color: #333333;    padding-top: 16px;">Satheesh Satchit</p>
+					 <div style="font-family: Roboto;font-weight:400;font-size: 14px;color: #333333;line-height: 1.7;">Ranjit Kurian has spent 2 decades in the software industry in various roles in Software Development, Product Management and Product Marketing roles at Microsoft Corporation, USA and IBS Software Services, India. He has primarily worked in Database Systems, Windows Operating System, MRO and Logistics Systems.</div>
+			      </div>
+			   </div>
+           </div>
+       </div>
+       <div class="container" style="padding-left: 5px;">
+           <div class="row row-centered">
+              <div class="col-md-6">
+			      <div id="founder3" style="text-align: -webkit-center;width: 480px;float: right;margin-top: 84px;line-height: 1.7;text-align: center;">
+				     <img class="img-responsive" src="img/ranjit_photo.png" alt="" style="padding-left: 120px;">
+					 <p style="font-family: Roboto;font-weight:700;font-size: 18px;font-weight: bold;color: #333333;    padding-top: 16px;">Ranjit Kurian</p>
+					 <div style="font-family: Roboto;font-weight:400;;font-size: 14px;color: #333333;line-height: 1.7;">Ranjit Kurian has spent 2 decades in the software industry in various roles in Software Development, Product Management and Product Marketing roles at Microsoft Corporation, USA and IBS Software Services, India. He has primarily worked in Database Systems, Windows Operating System, MRO and Logistics Systems.</div>
+			      </div>
+			   </div>
+			   <div class="col-md-6">
+			   	  <div id="founder4" style="text-align: -webkit-center;width: 480px;float: left;margin-top: 84px;line-height: 1.7;text-align: center;">
+				     <img class="img-responsive" src="img/franklin_photo.png" alt="" style="padding-left: 120px;">
+					 <p style="font-family: Roboto;font-weight:700;font-size: 18px;font-weight: bold;color: #333333;    padding-top: 16px;">Franklin Joshua</p>
+					 <div style="font-family: Roboto;font-weight:400;font-size: 14px;color: #333333;line-height: 1.7;">Ranjit Kurian has spent 2 decades in the software industry in various roles in Software Development, Product Management and Product Marketing roles at Microsoft Corporation, USA and IBS Software Services, India. He has primarily worked in Database Systems, Windows Operating System, MRO and Logistics Systems.</div>
+			      </div>
+			   </div>
+       </div>
+	   </div> -->
+   </section>
    <section id="newsroom" style="padding:0px 0px 0px 0px">
-       <div class="well">
-       <div class="container">
+       <div class="well" style="border-radius: 0px;">
+       <!--<div class="container">
            <div class="row" style="margin-left:40px">
                <div class="col-lg-12 text-center">
                    <h2 class="section-heading pull-left">NEWS ROOM</h2>
                </div>
            </div>
-       </div>
-        
-            <div class="container" style="padding-top: 25px;">
-                <div class="row" style="margin-left: 35px;" >
+       </div>-->
+
+            <div class="container">
+                <div class="row" style="margin-left: 35px;margin-top: -80px;" >
                      <!---------------------News Room Tile 1---------------------------->
-                    <div class="col-md-6"  >
-					<a href=" http://www.travelbizmonitor.com/Top-Stories/iaai-to-power-itop-booking-portal-to-deliver-ndclisted-airline-products-33992">
-                        <div id="newstile1" class="col-md-12 thumbnail newsroom-tiles"  style="border-radius: 0;">
-						
+                    <div class="col-md-6 " style="cursor:pointer"  onclick="readnews('http://www.travelbizmonitor.com/Top-Stories/iaai-to-power-itop-booking-portal-to-deliver-ndclisted-airline-products-33992')" >
+                        <div id="newstile1" class="col-md-12 thumbnail newsroom-tiles hoverMTop"  style="border-radius: 0;padding:0px">
+
 							<div class="col-md-12" style="padding-left: 30px;padding-top: 30px;">
-								
+
 									<p class="newsroom-tiles-heading">IAAI powers new “I-Top” booking system to deliver NDC listed airline products</p>
 									<p class="newsroom-tiles-subs">Travel Biz Monitor</p>
 									<!-- <p style="position: absolute;margin-top: 105px;">Read more</p> -->
-								
-
-								
 							</div>
-							
+
                             <div class="col-md-12" >
-								
-								<!-- <div class="col-md-6 pull-left bottom-align-text"> -->
-								<!---------------------facebook------------------>
+
 								<!--<div class="col-md-6 pull-left" style="padding-top:150px">
-								<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-									<!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
-									<!--<desc>Created with Sketch.</desc>
-									<defs></defs>
-									<g id="Info-Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.799999952">
-										<g id="Verteil" transform="translate(-120.000000, -4489.000000)" fill-rule="nonzero" fill="#CCCCCC">
-											<g id="News-Room" transform="translate(0.000000, 4000.000000)">
-												<g id="1" transform="translate(80.000000, 189.000000)">
-													<g id="icons" transform="translate(40.000000, 300.000000)">
-														<path d="M0,0 L20,0 L20,20 L0,20 L0,0 Z M12.7583857,10.48748 L12.9939552,8.20085242 L10.9789025,8.20085242 L10.9789025,6.85384479 C10.9789025,6.34860593 11.3131445,6.22997691 11.5508475,6.22997691 L13,6.22997691 L13,4.00834665 L11.0027261,4 C8.7860614,4 8.2823871,5.6584976 8.2823871,6.71763452 L8.2823871,8.19872136 L7,8.19872136 L7,10.48748 L8.2823871,10.48748 L8.2823871,17 L10.9787247,17 L10.9787247,10.48748 L12.7583857,10.48748 Z" id="facebook"></path>
-													</g>
-												</g>
-											</g>
-										</g>
-									</g>
-								</svg>-->
-	
-								<!--------------------------twitter--------------------------->
-								<!--<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-								<!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
-								<!--<desc>Created with Sketch.</desc>
-								<defs></defs>
-								<g id="Info-Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.799999952">
-									<g id="Verteil" transform="translate(-150.000000, -4489.000000)" fill-rule="nonzero" fill="#CCCCCC">
-										<g id="News-Room" transform="translate(0.000000, 4000.000000)">
-											<g id="1" transform="translate(80.000000, 189.000000)">
-												<g id="icons" transform="translate(40.000000, 300.000000)">
-													<path d="M30,0 L50,0 L50,20 L30,20 L30,0 Z M46,7.06546173 C45.5586156,7.24608868 45.0838153,7.36825755 44.5858808,7.42281841 C45.0942807,7.14171138 45.4844395,6.69692177 45.6685945,6.16605479 C45.1928762,6.42648969 44.6657486,6.61541937 44.1052052,6.71725501 C43.6561094,6.27585428 43.016249,6 42.3077206,6 C40.9483154,6 39.8457725,7.01750918 39.8457725,8.27207004 C39.8457725,8.45015532 39.8676214,8.62349619 39.9098504,8.78988986 C37.8637657,8.69517086 36.0495731,7.7906806 34.8352153,6.4156453 C34.6233361,6.75114374 34.5017901,7.14171138 34.5017901,7.55803445 C34.5017901,8.34611692 34.9367484,9.04185258 35.5969889,9.44919514 C35.1936106,9.43750353 34.8137336,9.335329 34.4819609,9.16469924 C34.4817773,9.17435753 34.4817773,9.18401581 34.4817773,9.19350466 C34.4817773,10.2943801 35.3307629,11.2125953 36.4568071,11.4211805 C36.2504361,11.4733691 36.0324979,11.5009884 35.8083173,11.5009884 C35.6493161,11.5009884 35.4952722,11.4869246 35.345084,11.4604914 C35.6583127,12.3629483 36.5673368,13.0198814 37.6449096,13.0383507 C36.8021665,13.6478396 35.7407509,14.0109574 34.5869825,14.0109574 C34.38869,14.0109574 34.1922335,14.0002824 34,13.9791019 C35.0889562,14.6240045 36.3833655,15 37.7736161,15 C42.3020288,15 44.7784816,11.5379271 44.7784816,8.53521604 C44.7784816,8.43676927 44.7760947,8.3386614 44.771321,8.24140073 C45.2527311,7.92115222 45.6700633,7.52109574 46,7.06546173 Z" id="twitter"></path>
-												</g>
-											</g>
-										</g>
-									</g>
-								</g>
-							</svg>-->
-							<!--------------------------------------Envolope---------------------------->
-							<!--<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-								<!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
-								<!--<desc>Created with Sketch.</desc>
-								<defs></defs>
-								<g id="Info-Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.799999952">
-									<g id="Verteil" transform="translate(-180.000000, -4489.000000)" fill-rule="nonzero" fill="#CCCCCC">
-										<g id="News-Room" transform="translate(0.000000, 4000.000000)">
-											<g id="1" transform="translate(80.000000, 189.000000)">
-												<g id="icons" transform="translate(40.000000, 300.000000)">
-													<path d="M60,0 L80,0 L80,20 L60,20 L60,0 Z M70.0150588,10.7977912 L70.0176275,10.7977912 C70.1081176,10.7977912 70.197549,10.7716181 70.269902,10.7239631 L70.2895294,10.7113945 C70.2938039,10.7086189 70.2982745,10.7060974 70.3027647,10.7031067 L70.5313529,10.5145782 L75.9874118,6.02617311 C75.9761176,6.01063344 75.9568824,6 75.9363922,6 L64.0633922,6 C64.0486667,6 64.035,6.00531672 64.0241176,6.01424959 L69.732451,10.7045727 C69.8043922,10.7639558 69.9070392,10.7977912 70.0150588,10.7977912 Z M64,6.63599291 L64,13.2891235 L68.0892157,9.99606133 L64,6.63599291 Z M71.9150588,10.0184033 L76,13.290824 L76,6.65811985 L71.9150588,10.0184033 Z M70.6162941,11.0865164 C70.453451,11.219708 70.240451,11.2931256 70.0167647,11.2931256 C69.7922353,11.2931256 69.5794314,11.220138 69.4170196,11.0875719 L68.480451,10.3175469 L64,13.9251164 L64,13.9365903 C64,13.9708558 64.029451,14 64.0642353,14 L75.9366078,14 C75.9707451,14 75.9999804,13.9708558 75.9999804,13.9363753 L75.9999804,13.9257419 L71.5233922,10.3401234 L70.6162941,11.0865164 Z" id="mail"></path>
-												</g>
-											</g>
-										</g>
-									</g>
-								</g>
-							</svg>-->
-							<!---------------------------------------Link------------------------------------>
-							<!--<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-								<!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
-								<!--<desc>Created with Sketch.</desc>
-								<defs></defs>
-									<g id="Info-Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.799999952">
-										<g id="Verteil" transform="translate(-210.000000, -4489.000000)" fill-rule="nonzero" fill="#CCCCCC">
-											<g id="News-Room" transform="translate(0.000000, 4000.000000)">
-												<g id="1" transform="translate(80.000000, 189.000000)">
-													<g id="icons" transform="translate(40.000000, 300.000000)">
-														<path d="M90,0 L110,0 L110,20 L90,20 L90,0 Z M105.911996,9.34323918 C107.362668,7.8922304 107.362668,5.53936491 105.911996,4.0883255 C104.46062,2.63722483 102.108122,2.63722483 100.656746,4.0883255 L98.665897,6.07911272 C99.4610601,5.96258601 100.277881,6.04195528 101.036039,6.33716242 L101.970305,5.40188544 C102.695167,4.6775451 103.873606,4.6775451 104.597609,5.40188544 C105.322562,6.12622579 105.322562,7.30469561 104.597609,8.02958734 L101.970305,10.6567991 C101.246333,11.3807719 100.067587,11.3817827 99.3431856,10.6567991 C99.1163506,10.4299335 98.9689768,10.1568738 98.8845531,9.86843647 C98.8160584,9.90795263 98.7443779,9.94149541 98.686329,10.0000345 L97.4651879,11.2210837 C97.6221804,11.4858726 97.8009527,11.7426357 98.0294725,11.9705122 C99.4802362,13.4218886 101.833347,13.4218886 103.283865,11.9705122 L105.911996,9.34323918 Z M98.9643819,13.663366 L98.0294418,14.598643 C97.3051015,15.3226157 96.1262947,15.3226157 95.4018318,14.598643 C94.6774302,13.8736593 94.6774302,12.6951895 95.4018318,11.9705122 L98.0294418,9.34323918 C98.7543642,8.61840871 99.9323745,8.61840871 100.656715,9.34323918 C100.883029,9.56961468 101.030556,9.84261312 101.115776,10.1306828 C101.184669,10.0906459 101.255461,10.058114 101.31348,10.0000038 L102.534529,8.77944471 C102.378547,8.51361431 102.198856,8.25777017 101.970244,8.0296486 C100.519848,6.57854793 98.1665231,6.57854793 96.7154224,8.0296486 L94.0882106,10.6569523 C92.6372631,12.1084818 92.6372631,14.4606734 94.0882106,15.9120804 C95.5393113,17.3627216 97.8920849,17.3627216 99.3431549,15.9120804 L101.334524,13.9208643 C100.538932,14.0380649 99.7218974,13.9580217 98.9643819,13.663366 Z" id="link"></path>
-													</g>
-												</g>
-											</g>
-										</g>
-									</g>
-								</svg>
-								</div>-->
-								<div class="col-md-6 pull-right" style="padding-top:110px" >
-									<img src="img/newsroom1.png" class="img-responsive pull-right"/>
+
+									<img src="./img/linkedin.png"/>&nbsp;
+
+									<img src="./img/facebook.svg"/>&nbsp;
+
+									<img src="./img/twitter.svg"/>&nbsp;
+
+									<img src="./img/mail.svg"/>&nbsp;
+								</div> -->
+								<div class="col-md-6 pull-right"  style="padding-top:110px">
+									<img src="img/newsroom1.png" class="img-responsive pull-right" />
 								</div>
 							</div>
                         </div>
-						</a>
                     </div>
 
                     <!---------------------News Room Tile 2---------------------------->
-                    <div class="col-md-6">
-					<a href=" http://www.expressbpd.com/travel/management-travel/iconic-model/392025/">
-                         <div id="newstile2" class="col-md-12 thumbnail newsroom-tiles" style="border-radius: 0;">
+                    <div class="col-md-6 " style="cursor:pointer" onclick="readnews('http://www.expressbpd.com/travel/management-travel/iconic-model/392025/')">
+                         <div id="newstile2" class="col-md-12 thumbnail newsroom-tiles hoverMTop" style="border-radius: 0; padding: 0px!important;">
                              <div class="col-md-6 newsroom-tiles" style="padding-top: 140px;padding-left: 40px;">
                                 <p class="newsroom-tiles-heading">ICONic model</p>
-                                
+
                                 <p class="newsroom-tiles-subs">Express Travel World</p>
                             </div>
                             <div class="col-md-6 newsroom-tiles">
-                                <img src="img/newsroom2.png" class="img-responsive pull-right" style="margin-right:-16px;height: 350px;"/>
+                                <img src="img/newsroom2.png" class="img-responsive pull-right" style="margin-right:-16px;height: 358px;"/>
                             </div>
                         </div>
-						</a>
                     </div>
                 </div>
 
                 <div class="row" style="margin-left: 35px;">
                      <!---------------------News Room Tile 3---------------------------->
-                    <div class="col-md-6" >
-					<a href="http://www.thehindubusinessline.com/specials/flight-plan/travel-agents-iata/article9912716.ece">
-                        <div id="newstile3" class="col-md-12 thumbnail newsroom-tiles" style="border-radius: 0;">
+                    <div class="col-md-6 " style="cursor:pointer" onclick="readnews('http://www.thehindubusinessline.com/specials/flight-plan/travel-agents-iata/article9912716.ece')">
+                        <div id="newstile3" class="col-md-12 thumbnail newsroom-tiles hoverMTop" style="border-radius: 0; padding: 0px!important;">
 							<div class="col-md-6 "  style="padding-top: 140px;padding-left: 40px;">
-								
+
 									<p class="newsroom-tiles-heading"> iTop comes to the rescue of travel agents</p>
-								
+
 								<p class="newsroom-tiles-subs">Hindustan Business Line</p>
 							</div>
 							<div class="col-md-6">
-								 <img src="img/newsroom3.png" class="img-responsive pull-right" style="margin-right:-16px;height: 350px;"/>
+								 <img src="img/newsroom3.png" class="img-responsive pull-right" style="margin-right:-16px;height: 358px;"/>
 							</div>
 						</div>
-						</a>
                     </div>
                     <!---------------------News Room Tile 4---------------------------->
-                    <div class="col-md-6">
-					<a style="text-decoration:none;" href=" http://www.eglobaltravelmedia.com.au/indian-travel-agents-get-their-own-portal/">
-                         <div id="newstile4" class="col-md-12 thumbnail newsroom-tiles" style="border-radius: 0;">
+                    <div class="col-md-6" style="cursor:pointer" onclick="readnews('http://www.eglobaltravelmedia.com.au/indian-travel-agents-get-their-own-portal/')">
+                         <div id="newstile4" class="col-md-12 thumbnail newsroom-tiles hoverMTop" style="border-radius: 0; padding: 0px!important;">
 							 <div class="col-md-12" style="padding-left: 30px;padding-top: 30px;">
-								
+
 									<p class="newsroom-tiles-heading"> Indian Travel Agents get their Own Portal</p>
-								
+
 								<p class="newsroom-tiles-subs">E Global Travel Media</p>
 							</div>
 							<div class="col-md-12 newsroom-tiles">
 								<img src="img/newsroom4.png" class="img-responsive pull-right" style="padding-top: 57px;padding-right: 35px;"/>
 							</div>
                         </div>
-						</a>
                     </div>
                 </div>
 
-                <div class="row" style="margin-left: 35px;" >
+                <div class="row" style="margin-left: 35px;">
                      <!---------------------News Room Tile 5---------------------------->
-                    <div class="col-md-6" >
-					<a style="text-decoration:none;" href="https://timesofindia.indiatimes.com/city/kochi/travel-agents-launch-online-ticket-portal/articleshow/60724303.cms">
-                        <div id="newstile5" class="col-md-12 thumbnail newsroom-tiles" style="border-radius: 0;">
+                    <div class="col-md-6 " style="cursor:pointer"  onclick="readnews('https://timesofindia.indiatimes.com/city/kochi/travel-agents-launch-online-ticket-portal/articleshow/60724303.cms')">
+                        <div id="newstile5" class="col-md-12 thumbnail newsroom-tiles hoverMTop" style="border-radius: 0; padding: 0px!important;">
 							<div class="col-md-12" style="padding-left: 30px;padding-top: 30px;">
-								
+
 									<p class="newsroom-tiles-heading"> Travel agents launch online ticket portal </p>
-								
+
 									<p class="newsroom-tiles-subs">Times Of India</p>
 							</div>
-							 <div class="col-md-12 "> 
-								<img src="img/newsroom5.png" class="img-responsive pull-right" 
+							 <div class="col-md-12 ">
+								<img src="img/newsroom5.png" class="img-responsive pull-right"
 								style="padding-top: 57px;padding-right: 35px;" />
-							 </div> 
+							 </div>
 						</div>
-						</a>
                     </div>
                 </div>
             </div>
         </div>
    </section>
-      
+
    <section id="contact" class="section section-parallax-yes" style="padding:0px 0px 0px 0px">
            <div class="section-inner">
                <div id="parallax-4" class="parallax">
@@ -607,8 +690,8 @@
                          <div class="container">
                              <div class="row">
                                  <div class="col-lg-12 text-center">
-                                     <h2 class="section-heading contact-us" style="font-size:32px!important;">CONTACT US</h2>
-                                     <p class="lead contact-us" style="font-size:18px!important;">Feel free to contact us anytime.</p>
+                                     <h2 class="section-heading contact-us" style="font-size: 40px;font-weight:300;">Contact Us</h2>
+                                     <!-- <p class="lead contact-us-subhead">Feel free to contact us anytime.</p> -->
                                  </div>
                              </div>
                          </div>
@@ -631,9 +714,9 @@
 														</g>
 													</g>
 												</g>
-											</svg>
-                                         <a href="mailto:contact@verteil.com" style="text-decoration:none"><p class="contact-us">contact@verteil.com</p></a>
-                                     </div>	
+											</svg><br/><br/>
+                                         <a href="mailto:contact@verteil.com" ><p class="contact-us-desc">contact@verteil.com</p></a>
+                                     </div>
                                  </div>
 								<!---------------------------Location------------------------>
 								<div class="col-lg-6 col-md-6">
@@ -651,9 +734,9 @@
 													</g>
 												</g>
 											</g>
-										</svg>
-										<p class="contact-us">Verteil Technologies Private Ltd, K.K Tower</p>
-                                         <p class="contact-us">1st Floor, Civil Line Road, Palarivattom P.O, Kochi, Kerala, India, 682025</p>
+										</svg><br/><br/>
+										<p class="contact-us-desc">Verteil Technologies Private Ltd, K.K Tower</p>
+                                         <p class="contact-us-desc">1st Floor, Civil Line Road, Palarivattom P.O, Kochi, Kerala, India, 682025</p>
 									</div>
 								</div>
                                 <div class="col-lg-3 col-md-3">
@@ -672,8 +755,8 @@
 														</g>
 													</g>
 												</g>
-											</svg>
-                                         <p class="contact-us">+91-484-4019970</p>
+											</svg><br/><br/>
+                                         <p class="contact-us-desc">+91-484-4019970</p>
                                      </div>
                                  </div>
                              </div>
@@ -687,39 +770,13 @@
            </div>
            <!-- //.section-inner -->
        </section>
-    
-	<!--<section id="location">
-		<div id="location" >
-		
-		</div>
-	</section>-->
-	
+
 	<footer>
 		<div class="container" style="height:80px;">
 			<div class="row" style="margin-top: 30px;">
 				<div class="col-md-12">
 					<span class="copyright footer-font" style="padding-left: 39%;"> © VERTEIL TECHNOLOGIES PVT LTD 2017</span>
 				</div>
-<!--
-				<div class="col-md-4">
-					<ul class="list-inline social-buttons">
-						<li><a href="#"><i class="fa fa-twitter"></i></a>
-						</li>
-						<li><a href="#"><i class="fa fa-facebook"></i></a>
-						</li>
-						<li><a href="#"><i class="fa fa-linkedin"></i></a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-md-4">
-					<ul class="list-inline quicklinks">
-						<li><a href="#">Privacy Policy</a>
-						</li>
-						<li><a href="#">Terms of Use</a>
-						</li>
-					</ul>
-				</div>
--->
 			</div>
 		</div>
     </footer>
@@ -737,23 +794,43 @@
 
     <!-- Theme JavaScript -->
     <script src="js/creative.js"></script>
-    <script>
 
-	
-	
+    <script>
 	<!-------------------scroll effect-------------------------->
 	$(document).ready(function(){
 		$("#mainNav").css("background-color", "transparent");
 		$("#mainNav").css('background', 'transparent');
 		$("#mainNav").css('border-color', 'transparent');
+
+		document.getElementById('newsroom').style.display = 'none';
+		document.getElementById('blog').style.display = 'none';
 		var scroll_pos = 0;
-            $(document).scroll(function() { 
+            $(document).scroll(function() {
 			scroll_pos = $(this).scrollTop();
 			if(scroll_pos > 550) {
+
+				document.getElementById('aboutNavbar').style.color='#222222';
+				document.getElementById('technologyNavbar').style.color='#222222';
+				document.getElementById('propositionNavbar').style.color='#222222';
+				document.getElementById('propositionNavbar').style.color='#222222';
+				document.getElementById('milestoneNavbar').style.color='#222222';
+				document.getElementById('contactNavbar').style.color='#222222';
+				document.getElementById('newsNavbar').style.color='#222222';
+				document.getElementById('blogNavbar').style.color='#222222';
+
 				$("#mainNav").css('background-color', 'white');
 				$("#mainNav").css('background', 'white');
 				$("#mainNav").css('border-color', 'white');
 			} else {
+
+				document.getElementById('aboutNavbar').style.color='#ffffff';
+				document.getElementById('technologyNavbar').style.color='#ffffff';
+				document.getElementById('propositionNavbar').style.color='#ffffff';
+				document.getElementById('milestoneNavbar').style.color='#ffffff';
+				document.getElementById('contactNavbar').style.color='#ffffff';
+				document.getElementById('newsNavbar').style.color='#ffffff';
+				document.getElementById('blogNavbar').style.color='#ffffff';
+
 				$("#mainNav").css('background-color', 'transparent');
 				$("#mainNav").css('background', 'transparent');
 				$("#mainNav").css('border-color', 'transparent');
@@ -761,7 +838,7 @@
         });
 	});
 
-	
+
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -773,7 +850,7 @@
     </script>
 	 <!--------------location-------------------->
     <script>
-         function loadMap() {
+        /* function loadMap() {
 		var grayStyles = [
 			{
 			  featureType: "all",
@@ -783,25 +860,110 @@
 			  ]
 			},
 		  ];
-	   
+
 				var mapOptions = {
 				   center:new google.maps.LatLng(9.9985, 76.3119),
 				   zoom:15,
 		  styles: grayStyles
 				}
-		
+
 				var map = new google.maps.Map(document.getElementById("location"),mapOptions);
-				
+
 				  var marker = new google.maps.Marker({
 				   position: new google.maps.LatLng(9.9985, 76.3119),
 				   map: map,
 				   icon: 'img/map_location_icon.png'
 				});
+			 }*/
+			const mq = window.matchMedia( "@media (min-width: 768px)");
+
+			function readnews(url) {
+			     var win = window.open(url, '_blank');
+				 win.focus();
 			 }
-			 
-			 
+			function shownews(value) {
+			   if(value == 'newsroom') {
+					document.getElementById('header').style.backgroundImage = "url('./img/inner_page_bg.png')";
+					document.getElementById('blog').style.display = 'none';
+				} else {
+					document.getElementById('header').style.backgroundImage = "url('./img/blog_bg.png')";
+					document.getElementById('newsroom').style.display = 'none';
+				}
+				if (mq.matches){
+					document.getElementById('header').style.minHeight="0%";
+				}
+						var scroll_pos = 0;
+            $(document).scroll(function() {
+			scroll_pos = $(this).scrollTop();
+			if(scroll_pos > 200) {
+
+				document.getElementById('aboutNavbar').style.color='#222222';
+				document.getElementById('technologyNavbar').style.color='#222222';
+				document.getElementById('propositionNavbar').style.color='#222222';
+				document.getElementById('propositionNavbar').style.color='#222222';
+				document.getElementById('milestoneNavbar').style.color='#222222';
+				document.getElementById('contactNavbar').style.color='#222222';
+				document.getElementById('newsNavbar').style.color='#222222';
+				document.getElementById('blogNavbar').style.color='#222222';
+
+				$("#mainNav").css('background-color', 'white');
+				$("#mainNav").css('background', 'white');
+				$("#mainNav").css('border-color', 'white');
+			} else {
+
+				document.getElementById('aboutNavbar').style.color='#ffffff';
+				document.getElementById('technologyNavbar').style.color='#ffffff';
+				document.getElementById('propositionNavbar').style.color='#ffffff';
+				document.getElementById('milestoneNavbar').style.color='#ffffff';
+				document.getElementById('contactNavbar').style.color='#ffffff';
+				document.getElementById('newsNavbar').style.color='#ffffff';
+				document.getElementById('blogNavbar').style.color='#ffffff';
+
+				$("#mainNav").css('background-color', 'transparent');
+				$("#mainNav").css('background', 'transparent');
+				$("#mainNav").css('border-color', 'transparent');
+			}
+        });
+
+				document.getElementById('about').style.display = 'none';
+				document.getElementById('contact').style.display = 'none';
+				document.getElementById('proposition').style.display = 'none';
+				document.getElementById('technology').style.display = 'none';
+				document.getElementById('milestones').style.display = 'none';
+				document.getElementById('founders').style.display = 'none';
+				document.getElementById('contact').style.display = 'none';
+				document.getElementById(value).style.display = 'block';
+				document.getElementById('header').style.height="420px";
+				document.getElementById('header').style.minHeight="0%";
+				document.getElementById('banner1').style.visibility = 'hidden';
+				document.getElementById('banner2').style.visibility = 'hidden';
+				document.getElementById('banner3').style.visibility = 'hidden';
+			}
+			function homeclick() {
+				if (mq.matches){
+					document.getElementById('header').style.minHeight="100%";
+				}
+
+				document.getElementById('header').style.backgroundImage = "url('./img/home_bg.jpg')";
+
+
+
+			    document.getElementById('newsroom').style.display = 'none';
+			    document.getElementById('blog').style.display = 'none';
+			    document.getElementById('about').style.display = 'block';
+			    document.getElementById('proposition').style.display = 'block';
+			    document.getElementById('technology').style.display = 'block';
+			    document.getElementById('milestones').style.display = 'block';
+			    document.getElementById('founders').style.display = 'block';
+			    document.getElementById('contact').style.display = 'block';
+			    document.getElementById('header').style.minHeight="100%";
+
+				document.getElementById('banner1').style.visibility = 'visible';
+                document.getElementById('banner2').style.visibility = 'visible';
+                document.getElementById('banner3').style.visibility = 'visible';
+			}
       </script>
-	 
+
 </body>
 
 </html>
