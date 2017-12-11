@@ -40,7 +40,7 @@
     <![endif]-->
 </head>
 
-<body id="page-top">
+<body id="page-top" onload="homeclick()">
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" >
         <div class="container-fluid" style="padding-top: 25px;height: 85px;">
@@ -70,10 +70,10 @@
                         <a id="milestoneNavbar" class="page-scroll" href="#milestones" style="font-family: 'Roboto';color: #ffffff;font-size: 14px;" onclick="homeclick();">MILESTONES</a>
                     </li>
 				    <li >
-					   <a id="newsNavbar" href="#" style="font-family: 'Roboto';color: #ffffff;font-size: 14px;" onclick="shownews('newsroom')">NEWS ROOM</a>
+					   <a id="newsNavbar" href="newsroom.html" style="font-family: 'Roboto';color: #ffffff;font-size: 14px;">NEWS ROOM</a>
 					</li>
 					<li >
-					   <a id="blogNavbar" href="#" style="font-family: 'Roboto';color: #ffffff;font-size: 14px;" onclick="shownews('blog')">BLOG</a>
+					   <a id="blogNavbar" href="blog.html" style="font-family: 'Roboto';color: #ffffff;font-size: 14px;">BLOG</a>
 					</li>
                     <li>
                         <a id="contactNavbar" class="page-scroll" href="#contact" style="font-family: 'Roboto';color: #ffffff;font-size: 14px;" onclick="homeclick();">CONTACT</a>
@@ -425,9 +425,9 @@
          </div>
        </div>
    </section>
-    <section id="blog" class="well" style="padding:0px 0px 0px 0px;border-radius: 0px;">
+   <!-- <section id="blog" class="well" style="padding:0px 0px 0px 0px;border-radius: 0px;">
 	<!--style="height: 440px;width: 100%;background-color: #f7f7f7;"-->
-       <div class="container" >
+    <!--   <div class="container" >
            <div class="row">
                <div class="col-lg-12">
 					<div id="blogcontent" class="col-md-12" style="border-radius: 0;margin-top: -60px;padding:0px;">
@@ -462,7 +462,7 @@
 
 								</div><br/><br/>-->
 
-							<p style="text-align:justify" class="blog-tile-content" style="padding-top: 30px;">Verteil Technologies is thrilled to announce the first-ever direct connect booking using IATA’s NDC standard on British Airways in India using our direct connect platform, Verteil Direct Connect (VDC). On 08 Dec 2017, our partner agency, Magellan Travels, an IATA accredited travel agent based out of Chennai issued a Chennai – London ticket on British Airways directly connecting to the airline using the Verteil Direct Connect (VDC) technology platform and thereby becoming the first travel agency in India to take advantage of the offers coming directly from British Airways. It is claimed to be the first live IATA NDC transaction from India.</p><br/>
+						<!--	<p style="text-align:justify" class="blog-tile-content" style="padding-top: 30px;">Verteil Technologies is thrilled to announce the first-ever direct connect booking using IATA’s NDC standard on British Airways in India using our direct connect platform, Verteil Direct Connect (VDC). On 08 Dec 2017, our partner agency, Magellan Travels, an IATA accredited travel agent based out of Chennai issued a Chennai – London ticket on British Airways directly connecting to the airline using the Verteil Direct Connect (VDC) technology platform and thereby becoming the first travel agency in India to take advantage of the offers coming directly from British Airways. It is claimed to be the first live IATA NDC transaction from India.</p><br/>
 
 							<img src="./img/blog_image.jpg" style=" width: 99%;"><br/><br/>
 
@@ -531,7 +531,7 @@
 	   </div>
 	   </div>
 	   </div><br/><br/>
-	</section>
+	</section> -->
    <section id="founders">
        <!--<div class="container" style="height: 440px;width: 100%;background-color: #f7f7f7;">
            <div class="row">
@@ -572,114 +572,6 @@
 			   </div>
        </div>
 	   </div> -->
-   </section>
-   <section id="newsroom" style="padding:0px 0px 0px 0px">
-       <div class="well" style="border-radius: 0px;">
-       <!--<div class="container">
-           <div class="row" style="margin-left:40px">
-               <div class="col-lg-12 text-center">
-                   <h2 class="section-heading pull-left">NEWS ROOM</h2>
-               </div>
-           </div>
-       </div>-->
-
-            <div class="container">
-                <div class="row" style="margin-left: 35px;margin-top: -80px;" >
-                     <!---------------------News Room Tile 1---------------------------->
-                    <div class="col-md-6 " style="cursor:pointer"  onclick="readnews('http://www.travelbizmonitor.com/Top-Stories/iaai-to-power-itop-booking-portal-to-deliver-ndclisted-airline-products-33992')" >
-                        <div id="newstile1" class="col-md-12 thumbnail newsroom-tiles hoverMTop"  style="border-radius: 0;padding:0px">
-
-							<div class="col-md-12" style="padding-left: 30px;padding-top: 30px;">
-
-									<p class="newsroom-tiles-heading">IAAI powers new “I-Top” booking system to deliver NDC listed airline products</p>
-									<p class="newsroom-tiles-subs">Travel Biz Monitor</p>
-									<!-- <p style="position: absolute;margin-top: 105px;">Read more</p> -->
-							</div>
-
-                            <div class="col-md-12" >
-
-								<!--<div class="col-md-6 pull-left" style="padding-top:150px">
-
-									<img src="./img/linkedin.png"/>&nbsp;
-
-									<img src="./img/facebook.svg"/>&nbsp;
-
-									<img src="./img/twitter.svg"/>&nbsp;
-
-									<img src="./img/mail.svg"/>&nbsp;
-								</div> -->
-								<div class="col-md-6 pull-right"  style="padding-top:110px">
-									<img src="img/newsroom1.png" class="img-responsive pull-right" />
-								</div>
-							</div>
-                        </div>
-                    </div>
-
-                    <!---------------------News Room Tile 2---------------------------->
-                    <div class="col-md-6 " style="cursor:pointer" onclick="readnews('http://www.expressbpd.com/travel/management-travel/iconic-model/392025/')">
-                         <div id="newstile2" class="col-md-12 thumbnail newsroom-tiles hoverMTop" style="border-radius: 0; padding: 0px!important;">
-                             <div class="col-md-6 newsroom-tiles" style="padding-top: 140px;padding-left: 40px;">
-                                <p class="newsroom-tiles-heading">ICONic model</p>
-
-                                <p class="newsroom-tiles-subs">Express Travel World</p>
-                            </div>
-                            <div class="col-md-6 newsroom-tiles">
-                                <img src="img/newsroom2.png" class="img-responsive pull-right" style="margin-right:-16px;height: 358px;"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row" style="margin-left: 35px;">
-                     <!---------------------News Room Tile 3---------------------------->
-                    <div class="col-md-6 " style="cursor:pointer" onclick="readnews('http://www.thehindubusinessline.com/specials/flight-plan/travel-agents-iata/article9912716.ece')">
-                        <div id="newstile3" class="col-md-12 thumbnail newsroom-tiles hoverMTop" style="border-radius: 0; padding: 0px!important;">
-							<div class="col-md-6 "  style="padding-top: 140px;padding-left: 40px;">
-
-									<p class="newsroom-tiles-heading"> iTop comes to the rescue of travel agents</p>
-
-								<p class="newsroom-tiles-subs">Hindustan Business Line</p>
-							</div>
-							<div class="col-md-6">
-								 <img src="img/newsroom3.png" class="img-responsive pull-right" style="margin-right:-16px;height: 358px;"/>
-							</div>
-						</div>
-                    </div>
-                    <!---------------------News Room Tile 4---------------------------->
-                    <div class="col-md-6" style="cursor:pointer" onclick="readnews('http://www.eglobaltravelmedia.com.au/indian-travel-agents-get-their-own-portal/')">
-                         <div id="newstile4" class="col-md-12 thumbnail newsroom-tiles hoverMTop" style="border-radius: 0; padding: 0px!important;">
-							 <div class="col-md-12" style="padding-left: 30px;padding-top: 30px;">
-
-									<p class="newsroom-tiles-heading"> Indian Travel Agents get their Own Portal</p>
-
-								<p class="newsroom-tiles-subs">E Global Travel Media</p>
-							</div>
-							<div class="col-md-12 newsroom-tiles">
-								<img src="img/newsroom4.png" class="img-responsive pull-right" style="padding-top: 57px;padding-right: 35px;"/>
-							</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row" style="margin-left: 35px;">
-                     <!---------------------News Room Tile 5---------------------------->
-                    <div class="col-md-6 " style="cursor:pointer"  onclick="readnews('https://timesofindia.indiatimes.com/city/kochi/travel-agents-launch-online-ticket-portal/articleshow/60724303.cms')">
-                        <div id="newstile5" class="col-md-12 thumbnail newsroom-tiles hoverMTop" style="border-radius: 0; padding: 0px!important;">
-							<div class="col-md-12" style="padding-left: 30px;padding-top: 30px;">
-
-									<p class="newsroom-tiles-heading"> Travel agents launch online ticket portal </p>
-
-									<p class="newsroom-tiles-subs">Times Of India</p>
-							</div>
-							 <div class="col-md-12 ">
-								<img src="img/newsroom5.png" class="img-responsive pull-right"
-								style="padding-top: 57px;padding-right: 35px;" />
-							 </div>
-						</div>
-                    </div>
-                </div>
-            </div>
-        </div>
    </section>
 
    <section id="contact" class="section section-parallax-yes" style="padding:0px 0px 0px 0px">
@@ -802,8 +694,6 @@
 		$("#mainNav").css('background', 'transparent');
 		$("#mainNav").css('border-color', 'transparent');
 
-		document.getElementById('newsroom').style.display = 'none';
-		document.getElementById('blog').style.display = 'none';
 		var scroll_pos = 0;
             $(document).scroll(function() {
 			scroll_pos = $(this).scrollTop();
@@ -881,64 +771,6 @@
 			     var win = window.open(url, '_blank');
 				 win.focus();
 			 }
-			function shownews(value) {
-			   if(value == 'newsroom') {
-					document.getElementById('header').style.backgroundImage = "url('./img/inner_page_bg.png')";
-					document.getElementById('blog').style.display = 'none';
-				} else {
-					document.getElementById('header').style.backgroundImage = "url('./img/blog_bg.png')";
-					document.getElementById('newsroom').style.display = 'none';
-				}
-				if (mq.matches){
-					document.getElementById('header').style.minHeight="0%";
-				}
-						var scroll_pos = 0;
-            $(document).scroll(function() {
-			scroll_pos = $(this).scrollTop();
-			if(scroll_pos > 200) {
-
-				document.getElementById('aboutNavbar').style.color='#222222';
-				document.getElementById('technologyNavbar').style.color='#222222';
-				document.getElementById('propositionNavbar').style.color='#222222';
-				document.getElementById('propositionNavbar').style.color='#222222';
-				document.getElementById('milestoneNavbar').style.color='#222222';
-				document.getElementById('contactNavbar').style.color='#222222';
-				document.getElementById('newsNavbar').style.color='#222222';
-				document.getElementById('blogNavbar').style.color='#222222';
-
-				$("#mainNav").css('background-color', 'white');
-				$("#mainNav").css('background', 'white');
-				$("#mainNav").css('border-color', 'white');
-			} else {
-
-				document.getElementById('aboutNavbar').style.color='#ffffff';
-				document.getElementById('technologyNavbar').style.color='#ffffff';
-				document.getElementById('propositionNavbar').style.color='#ffffff';
-				document.getElementById('milestoneNavbar').style.color='#ffffff';
-				document.getElementById('contactNavbar').style.color='#ffffff';
-				document.getElementById('newsNavbar').style.color='#ffffff';
-				document.getElementById('blogNavbar').style.color='#ffffff';
-
-				$("#mainNav").css('background-color', 'transparent');
-				$("#mainNav").css('background', 'transparent');
-				$("#mainNav").css('border-color', 'transparent');
-			}
-        });
-
-				document.getElementById('about').style.display = 'none';
-				document.getElementById('contact').style.display = 'none';
-				document.getElementById('proposition').style.display = 'none';
-				document.getElementById('technology').style.display = 'none';
-				document.getElementById('milestones').style.display = 'none';
-				document.getElementById('founders').style.display = 'none';
-				document.getElementById('contact').style.display = 'none';
-				document.getElementById(value).style.display = 'block';
-				document.getElementById('header').style.height="420px";
-				document.getElementById('header').style.minHeight="0%";
-				document.getElementById('banner1').style.visibility = 'hidden';
-				document.getElementById('banner2').style.visibility = 'hidden';
-				document.getElementById('banner3').style.visibility = 'hidden';
-			}
 			function homeclick() {
 				if (mq.matches){
 					document.getElementById('header').style.minHeight="100%";
@@ -948,13 +780,10 @@
 
 
 
-			    document.getElementById('newsroom').style.display = 'none';
-			    document.getElementById('blog').style.display = 'none';
 			    document.getElementById('about').style.display = 'block';
 			    document.getElementById('proposition').style.display = 'block';
 			    document.getElementById('technology').style.display = 'block';
 			    document.getElementById('milestones').style.display = 'block';
-			    document.getElementById('founders').style.display = 'block';
 			    document.getElementById('contact').style.display = 'block';
 			    document.getElementById('header').style.minHeight="100%";
 
