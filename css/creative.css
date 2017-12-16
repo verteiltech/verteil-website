@@ -668,6 +668,13 @@ h2{
 	font-size: 17px;
 	color: #333333;
 }
+#newstile6:hover {
+	color: #7795f8;
+	transform: translateY(-1px) slow;;
+	box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+	transition: box-shadow 1.5s ease-in-out;
+	transition: transform 1.5s ease-in-out;
+}
 #newstile:hover {
 	color: #7795f8;
 	transform: translateY(-1px) slow;;
