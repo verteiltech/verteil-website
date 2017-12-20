@@ -668,6 +668,20 @@ h2{
 	font-size: 17px;
 	color: #333333;
 }
+#newstile8:hover {
+	color: #7795f8;
+	transform: translateY(-1px) slow;;
+	box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+	transition: box-shadow 1.5s ease-in-out;
+	transition: transform 1.5s ease-in-out;
+}
+#newstile7:hover {
+	color: #7795f8;
+	transform: translateY(-1px) slow;;
+	box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+	transition: box-shadow 1.5s ease-in-out;
+	transition: transform 1.5s ease-in-out;
+}
 #newstile6:hover {
 	color: #7795f8;
 	transform: translateY(-1px) slow;;
@@ -702,7 +716,7 @@ h2{
 }
 
 #newstile2 img:{
-	height:359px!important;
+	height:360px!important;
 
 }
 
@@ -715,7 +729,7 @@ h2{
 }
 
 #newstile3 img:{
-	height:359px!important;
+	height:360px!important;
 }
 
 #newstile4:hover {
