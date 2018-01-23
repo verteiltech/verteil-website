@@ -89,7 +89,7 @@
 	<!---removing style causes white space on top of carousel--->
 		
 		<div class="carousel-inner" style="overflow: visible !important;">
-		<div class="item active">
+		<div id="i" class="item active">
 			<img src="./img/home_bg.jpg" style="width:100%;margin-top:-118px;min-height:100%;">
 			<div class="header-content">
 				<div class="header-content-inner">
@@ -120,7 +120,7 @@
 		<div style="background-color: rgba(0, 0, 0, 0.3);padding-top: 20px;height:60px; position: absolute;
     bottom: 0;width:100%;">
 		   <marquee  style="cursor: pointer;">
-			   <span onclick="readnews('https://www.tnooz.com/article/ba-taps-verteil-for-its-first-ever-ndc-booking-in-india/')" style="padding-left: 4%;">* BA taps Verteil for its first-ever NDC booking in India<span style="font-size:16px"> (Tnooz)</span></span>
+			   <span id="" onclick="readnews('https://www.tnooz.com/article/ba-taps-verteil-for-its-first-ever-ndc-booking-in-india/')" style="padding-left: 4%;">* BA taps Verteil for its first-ever NDC booking in India<span style="font-size:16px"> (Tnooz)</span></span>
 			   <span onclick="readnews('http://www.thehindubusinessline.com/economy/logistics/travel-startup-verteil-launches-platform-for-live-direct-connect-bookings/article9994528.ece')" style="padding-left: 4%;">* Travel start-up, Verteil, launches platform for live direct connect bookings<span style="font-size:16px"> (Hindu Business Line)</span></span>
 			  <span onclick="readnews('http://www.thehindubusinessline.com/todays-paper/tp-others/tp-states/travel-startup-verteil-tech-helps-in-direct-flight-connect-bookings/article9996121.ece')" style="padding-left: 4%;">* Travel start-up Verteil Tech helps in ‘direct flight connect’ bookings<span style="font-size:16px"> (Hindu Business Line)</span></span>
 			   <span onclick="readnews('http://www.travelbizmonitor.com/Top-Stories/travel-startup-verteil-technologies-helps-in-direct-flight-connect-bookings-34639')" style="padding-left: 4%;">* Travel start-up Verteil Technologies helps in direct flight connect bookings<span style="font-size:16px"> (Travel Biz Monitor)</span></span> 
@@ -760,13 +760,13 @@
 			 var win = window.open(url, '_blank');
 			 win.focus();
 		 }
-		function homeclick() {
+		function homeclick() {debugger;
 			if (mq.matches){
 				document.getElementById('header').style.minHeight="100%";
 			}
 
 			document.getElementById('header').style.backgroundImage = "url('./img/home_bg.jpg')";
-
+document.getElementById('i').style.display="url('./img/home_bg.jpg')";
 			document.getElementById('about').style.display = 'block';
 			document.getElementById('proposition').style.display = 'block';
 			document.getElementById('technology').style.display = 'block';
@@ -777,7 +777,9 @@
 			document.getElementById('banner1').style.visibility = 'visible';
 			document.getElementById('banner2').style.visibility = 'visible';
 			document.getElementById('banner3').style.visibility = 'visible';
+			$("#header").carousel("prev");
 		}
+
 		
 		$('.carousel').carousel({
 		  interval: 1000 * 8
