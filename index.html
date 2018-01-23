@@ -85,22 +85,38 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <header id="header">
-	
-        <div class="header-content">
-            <div class="header-content-inner">
-				<div style="padding-right: 75px;">
-					<div style="padding-top:120px">
-						<a href="blog.html">
-						<img id="banner1" src="./img/banner_text_1.png" style="padding-bottom:40px!important;padding-left:60px;"></a><br/><br/>
-						<a href="blog.html">
-						<img id="banner2" src="./img/banner_text_2.png" style="padding-bottom:40px!important;"></a><br/><br/>
-						<a href="blog.html">
-						<img id="banner3" src="./img/banner_text_3.png" style="padding-bottom:40px!important;"></a><br/><br/>
+    <header id="header" class="carousel slide" data-ride="carousel">
+	<!---removing style causes white space on top of carousel--->
+		
+		<div class="carousel-inner" style="overflow: visible !important;">
+		<div class="item active">
+			<img src="./img/home_bg.jpg" style="width:100%;margin-top:-118px;min-height:100%;">
+			<div class="header-content">
+				<div class="header-content-inner">
+					<div style="padding-right: 75px;padding-top:120px;">
+					 <!-- <div style=""> -->
+					  <a href="blog.html">
+					  <img id="banner1" src="./img/banner_text_1.png" style="padding-bottom:40px!important;padding-left:60px;"></a><br/><br/>
+					  <a href="blog.html">
+					  <img id="banner2" src="./img/banner_text_2.png" style="padding-bottom:40px!important;"></a><br/><br/>
+					  <a href="blog.html">
+					  <img id="banner3" src="./img/banner_text_3.png" style="padding-bottom:40px!important;"></a><br/><br/>
+					 <!-- </div> -->
 					</div>
-				</div>
+			   </div>
 			</div>
-        </div>
+		</div>
+	   
+
+			<div class="item">
+				<img src="./img/ba_bg.jpg" style="width:100%;margin-top:-118px;min-height:100%;">
+			</div>
+		</div>
+		<ol class="carousel-indicators" style="padding-bottom: 30px;">
+			<li data-target="#header" data-slide-to="0" class="active"></li>
+			<li data-target="#header" data-slide-to="1"></li>
+		</ol>
+
 		<div style="background-color: rgba(0, 0, 0, 0.3);padding-top: 20px;height:60px; position: absolute;
     bottom: 0;width:100%;">
 		   <marquee  style="cursor: pointer;">
@@ -115,6 +131,7 @@
 			   <span onclick="readnews('http://www.thehindu.com/business/Industry/consumer-habits-pushing-tech-norms-in-air-ticketing/article22481556.ece')" style="padding-left: 4%;">* Consumer habits pushing tech norms in air ticketing, says Jerrin Jos<span style="font-size:16px"> (THE HINDU)</span></span>
 		   </marquee>
 		</div>
+
 	</header>
 		
     <section class="" id="about">
@@ -312,7 +329,7 @@
                      </div>
 					  <div class="col-lg-12" style="margin-top: -15px;">
                       <h3 class="technology-section-sub-heading">OGCL</h3>
-                       <p class="text-muted technology-section-content">Creators and implementers of a new language for object conversions - yet another but invisible disruption in the way application work.</p>
+                       <p class="text-muted technology-section-content">Creators and implementers of a new language for object conversions - yet another but invisible disruption in the way applications work.</p>
                    </div>
                    </div>
                </div>
@@ -669,7 +686,7 @@
 			</div>
 		</div>
     </footer>
-<script src = "https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script src = "https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
@@ -737,58 +754,36 @@
     </script>
 	 <!--------------location-------------------->
     <script>
-        /* function loadMap() {
-		var grayStyles = [
-			{
-			  featureType: "all",
-			  stylers: [
-				{ saturation: -90 },
-				{ lightness: 50 }
-			  ]
-			},
-		  ];
-
-				var mapOptions = {
-				   center:new google.maps.LatLng(9.9985, 76.3119),
-				   zoom:15,
-		  styles: grayStyles
-				}
-
-				var map = new google.maps.Map(document.getElementById("location"),mapOptions);
-
-				  var marker = new google.maps.Marker({
-				   position: new google.maps.LatLng(9.9985, 76.3119),
-				   map: map,
-				   icon: 'img/map_location_icon.png'
-				});
-			 }*/
-			const mq = window.matchMedia( "@media (min-width: 768px)");
-
-			function readnews(url) {
-			     var win = window.open(url, '_blank');
-				 win.focus();
-			 }
-			function homeclick() {
-				if (mq.matches){
-					document.getElementById('header').style.minHeight="100%";
-				}
-
-				document.getElementById('header').style.backgroundImage = "url('./img/home_bg.jpg')";
-
-
-
-			    document.getElementById('about').style.display = 'block';
-			    document.getElementById('proposition').style.display = 'block';
-			    document.getElementById('technology').style.display = 'block';
-			    document.getElementById('milestones').style.display = 'block';
-			    document.getElementById('contact').style.display = 'block';
-			    document.getElementById('header').style.minHeight="100%";
-
-				document.getElementById('banner1').style.visibility = 'visible';
-                document.getElementById('banner2').style.visibility = 'visible';
-                document.getElementById('banner3').style.visibility = 'visible';
+	
+		const mq = window.matchMedia( "@media (min-width: 768px)");
+		function readnews(url) {
+			 var win = window.open(url, '_blank');
+			 win.focus();
+		 }
+		function homeclick() {
+			if (mq.matches){
+				document.getElementById('header').style.minHeight="100%";
 			}
-      </script>
+
+			document.getElementById('header').style.backgroundImage = "url('./img/home_bg.jpg')";
+
+			document.getElementById('about').style.display = 'block';
+			document.getElementById('proposition').style.display = 'block';
+			document.getElementById('technology').style.display = 'block';
+			document.getElementById('milestones').style.display = 'block';
+			document.getElementById('contact').style.display = 'block';
+			document.getElementById('header').style.minHeight="100%";
+
+			document.getElementById('banner1').style.visibility = 'visible';
+			document.getElementById('banner2').style.visibility = 'visible';
+			document.getElementById('banner3').style.visibility = 'visible';
+		}
+		
+		$('.carousel').carousel({
+		  interval: 1000 * 8
+		});
+
+    </script>
 
 </body>
 
