@@ -834,12 +834,13 @@ h2{
 	  -webkit-transition: transform 0.3s ease 1.5s
 	}
 }
-@media not all and (min-resolution:.001dpcm) { @media {
-
-    div #customerproposition  {
-        height:535px!important;
-    }
-}}
+@media not all and (min-resolution:.001dpcm) { 
+	@media {
+		div #customerproposition  {
+			height:535px!important;
+		}
+	}
+}
 /*Edge*/
 @media not all and (min-resolution:.001dpcm) {
 @media {
@@ -848,3 +849,5 @@ h2{
 		}
 	}
 }
+
+
