@@ -462,20 +462,21 @@ body {
 }
 .carousel{
     background: #fff;
-    margin-top: 20px;
+    //margin-top: 20px;
 }
 .carousel .item img{
     margin: 0 auto; /* Align slide image horizontally center */
 }
 
 .carousel-indicators li {
-  background-color: #fff;
+  background-color: #403e47;
+  border: 1px solid #403e47;
   /* #999;
   background-color: rgba(70,70,70,.25); */
 }
 
 .carousel-indicators .active {
-  background-color: #fff; /*#444;*/
+  background-color: #403e47; /*#444;*/
 }
 h2{
   font-weight: 700;
@@ -670,6 +671,8 @@ h2{
 	font-size: 17px;
 	color: #333333;
 }
+#blog2:hover,
+#blog1:hover,
 #newstile14:hover,
 #newstile13:hover,
 #newstile12:hover,
