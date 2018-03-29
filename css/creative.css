@@ -610,6 +610,20 @@ h2{
 	color: #666666;
 	line-height: 0;
 }
+.newsroom-tiles-subs-press{
+	font-family: 'Roboto';
+	font-size: 14px;
+	font-weight: 500;
+	color: #ffa955!important;
+	line-height: 0;
+}
+.newsroom-tiles-subs-update{
+	font-family: 'Roboto';
+	font-size: 14px;
+	font-weight: 500;
+	color: #1cb5e1!important;
+	line-height: 0;
+}
 .milestone-tiles-header{
 	font-family: 'Roboto';
 	font-size: 32px;
