@@ -635,7 +635,17 @@ h2{
 	font-size: 21px;
 	font-weight: 700;
 }
-
+.provider-heading {
+  font-family: 'Roboto';
+  font-size: 40px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 1);
+}
+.round-logo {
+  height: 160px;
+  width: 160px;
+  margin: 80px 20px 0 20px;
+}
 .contact-us{
 	font-family: 'Roboto';
 	font-size: 40px;
