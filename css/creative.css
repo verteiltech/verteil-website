@@ -8,7 +8,7 @@ body {
 }
 body {
  /* font-family: 'Roboto','Merriweather', 'Helvetica Neue', Arial, sans-serif;*/
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto-Regular', sans-serif;
   overflow-x : hidden;
 }
 
@@ -512,7 +512,7 @@ h2{
   background-color: #F9F9F9;
 }
 .caption h3 {
-	font-family:Roboto;
+	font-family:'Roboto-Bold';
     margin-left: 20px;
     font-size: 21px;
     font-weight: 700;
@@ -568,21 +568,21 @@ h2{
 }
 
 .proposition-header{
-	font-family: 'Roboto';
+	font-family: 'Roboto-Light';
 	font-size: 32px;
 	font-weight: 300;
 	color: #333333;
 }
 
 .technologies-content{
-	font-family: 'Roboto';
+	font-family: 'Roboto-Regular';
 	font-size: 16px;
 	font-weight: 400;
 	color: #333333;
 }
 
 .proposition-content{
-	font-family: 'Roboto';
+	font-family: 'Roboto-Regular';
 	font-size: 16px;
 	font-weight: 400;
 	color: #333333;
@@ -596,7 +596,7 @@ h2{
 }
 
 .newsroom-tiles-heading{
-	font-family: 'Roboto';
+	font-family: 'Roboto-Bold';
 	font-size: 22px;
 	font-weight: 700;
 	color: #333333;
@@ -604,39 +604,39 @@ h2{
 }
 
 .newsroom-tiles-subs{
-	font-family: 'Roboto';
+	font-family: 'Roboto-Medium';
 	font-size: 14px;
 	font-weight: 500;
 	color: #666666;
 	line-height: 0;
 }
 .newsroom-tiles-subs-press{
-	font-family: 'Roboto';
+	font-family: 'Roboto-Medium';
 	font-size: 17px;
 	font-weight: 500;
 	color: #ffa955!important;
 	line-height: 0;
 }
 .newsroom-tiles-subs-update{
-	font-family: 'Roboto';
+	font-family: 'Roboto-Medium';
 	font-size: 17px;
 	font-weight: 500;
 	color: #1cb5e1!important;
 	line-height: 0;
 }
 .milestone-tiles-header{
-	font-family: 'Roboto';
+	font-family: 'Roboto-Light';
 	font-size: 32px;
 	font-weight: 300;
 	color: #333333;
 }
 .milestone-tiles-heading{
-	font-family: 'Roboto';
+	font-family: 'Roboto-Bold';
 	font-size: 21px;
 	font-weight: 700;
 }
 .provider-heading {
-  font-family: 'Roboto';
+  font-family: 'Roboto-Light';
   font-size: 40px;
   font-weight: 300;
   color: rgba(0, 0, 0, 1);
@@ -647,7 +647,7 @@ h2{
   margin: 80px 10px 0 10px;
 }
 .contact-us{
-	font-family: 'Roboto';
+	font-family: 'Roboto-Light';
 	font-size: 40px;
 	font-weight: 300;
 	color: #ffffff;
@@ -662,35 +662,42 @@ h2{
 	line-height: 34px;
 }
 .contact-us-desc {
-	font-family: 'Roboto';
+	font-family: 'Roboto-Regular';
 	font-size: 16px;
 	font-weight: 400;
 	color: #ffffff;
 	text-align: center;
 }
 .footer-font{
-	font-family: 'Roboto';
+	font-family: 'Roboto-Bold';
 	font-size: 16px;
 	font-weight: 400;
 	color: #333333;
+	padding-left: 39%;
 }
-
+.design-font{
+	font-family: 'Roboto-Bold';
+	font-size: 15px;
+	font-weight: 400;
+	color: #333333;
+	padding-left: 42%;
+}
 .technology-section-heading{
-	font-family: 'Roboto';
+	font-family: 'Roboto-Light';
     font-size: 40px;
     font-weight: 300;
     color: #333333;
 }
 
 .technology-section-sub-heading{
-	font-family: 'Roboto';
+	font-family: 'Roboto-Medium';
 	font-size: 20px;
 	font-weight: 500;
 	color: #333333;
 }
 
 .technology-section-content{
-	font-family: 'Roboto';
+	font-family: 'Roboto-Regular';
 	font-weight: 400;
 	font-size: 17px;
 	color: #333333;
