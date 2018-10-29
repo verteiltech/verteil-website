@@ -632,21 +632,6 @@
       // initialization of show animations
       $.HSCore.components.HSShowAnimation.init('.js-animation-link');
 
-      // initialization of form validation
-      $.HSCore.components.HSValidation.init('.js-validate', {
-        rules: {
-          confirmPassword: {
-            equalTo: '#password'
-          }
-        }
-      });
-
-      // initialization of forms
-      $.HSCore.helpers.HSFocusState.init();
-
-      // initialization of cubeportfolio
-      $.HSCore.components.HSCubeportfolio.init('.cbp');
-
       // initialization of go to
       $.HSCore.components.HSGoTo.init('.js-go-to');
     });
