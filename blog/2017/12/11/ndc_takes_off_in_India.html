@@ -45,7 +45,36 @@
     data-header-fix-moment="500" data-header-fix-effect="slide">
 
     <div class="u-header__section">
+      <!-- Topbar -->
+      <div class="container pt-2">
+        <div class="d-flex align-items-center mb-0">
+          <div class="ml-auto">
+            <!-- Language -->
+            <div class="position-relative u-sidebar--account__toggle-bg">
+              <a id="languageDropdownInvoker" class="d-flex align-items-center u-unfold-wrapper text-white" href="javascript:;"
+                role="button" aria-controls="languageDropdown" aria-haspopup="true" aria-expanded="false" data-unfold-event="hover"
+                data-unfold-target="#languageDropdown" data-unfold-type="css-animation" data-unfold-duration="300"
+                data-unfold-delay="300" data-unfold-hide-on-scroll="true" data-unfold-hide-on-blur="true"
+                data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
+                <img class="u-unfold__icon" src="/assets/vendor/flag-icon-css/flags/4x3/in.svg" alt="SVG">
+                <span class="d-inline-block d-sm-none">ENG</span>
+                <span class="d-none d-sm-inline-block">English</span>
+                <span class="fa fa-angle-down u-unfold__icon-pointer"></span>
+              </a>
 
+              <div id="languageDropdown" class="u-unfold mt-2" style="left:-3em" aria-labelledby="languageDropdownInvoker">
+                <a class="active u-list__link" href="/jp">
+                  <img class="u-unfold__icon" src="/assets/vendor/flag-icon-css/flags/4x3/jp.svg" alt="SVG">
+                  <span class="d-inline-block d-sm-none">語</span>
+                  <span class="d-none d-sm-inline-block">日本語</span>
+                </a>
+              </div>
+            </div>
+            <!-- End Language -->
+          </div>
+        </div>
+      </div>
+      <!-- End Topbar -->
       <div id="logoAndNav" class="container">
         <!-- Nav -->
         <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar hs-menu-initialized hs-menu-horizontal">
@@ -518,6 +547,7 @@
   <script src="/assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
   <script src="/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
   <script src="/assets/vendor/slick-carousel/slick/slick.js"></script>
+  <script src="assets/js/components/hs.unfold.js"></script>
 
   <!-- JS Front -->
   <script src="/assets/js/hs.core.js"></script>
@@ -556,6 +586,9 @@
 
       // initialization of slick carousel
       $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+
+      // initialization of unfold component
+      $.HSCore.components.HSUnfold.init($('[data-unfold-target]'));
 
       // initialization of go to
       $.HSCore.components.HSGoTo.init('.js-go-to');
