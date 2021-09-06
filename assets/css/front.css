@@ -8462,6 +8462,7 @@ button:focus {
 
 .form-control:focus {
   box-shadow: 0 0 0 0 transparent;
+  border: 2px solid #DE4437;
 }
 
 .btn:focus, .btn.focus, .btn:not(:disabled):not(.disabled):active:focus, .btn:not(:disabled):not(.disabled).active:focus, .btn:not([disabled]):not(.disabled):active, .btn:not([disabled]):not(.disabled).active {
