@@ -1,6 +1,6 @@
 var mailConfig = {
   from: 'noreply-alerts@verteil.com',
-  to: 'contact@verteil.com',
+  to: 'binu.joseph@verteil.com,lal@amt.in',
   subject: 'Business Enquiry via verteil.com',
   greetingText: 'Hello Team,',
   greetingDesc: 'We have a new business enquiry on verteil.com and here are the details:',
